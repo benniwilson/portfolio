@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Benedict Wilson</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#football">Football</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Benedict Wilson</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#football" onclick="toggleMenu()">Football</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Benni Wilson profile picture" class="profile-pic-1" />
+        </div>
+        <div class = "section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Benedict Wilson</h1>
+            <p class="section__text__p2">Incoming Graduate Software Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/benniCV.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id = "socials-container">
+                <img src = "./assets/linkedin.png" alt = "My LinkedIn profile" class = "icon" onclick="location.href='https://www.linkedin.com/in/benedict-wilson-7a1834270/'">
+                <img src = "./assets/github.png" alt = "My Github profile" class = "icon" onclick="location.href='https://https://github.com/benniwilson'">
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get to Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/profile-pic-2.png" alt="profile picture" class="about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon" class="icon">
+                        <h3>Experience</h3> 
+                        <p>Northcoders <br>Software Development Bootcamp</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon" class="icon">
+                        <h3>Education</h3> 
+                        <p>M.Eng. Master's degree <br>Chemical Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Throughout my university degree I enjoyed leveraging MATLAB to solve complex problems. From this, I gained an interest in Software Development and began self-studying some programming langauges. During my self-study, I discovered Northcoders and enrolled
+                        in a 13-week Software Development Bootcamp in Java, in which I learnt to create a full-stack application utilizing Java, SpringBoot, PostgreSQL among other technologies. 
+                        Alongside my professional career I enjoy playing a variety of sports namely golf, padel, running, and football which I play at a semi-professional level.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container">
+                    <h2 class="experience-subtitle">Programming Languages</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Java</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>MATLAB</h3>
+                                <p>Beginner</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+    <section id="projects">
+        <p class="section__text__p1">Browse My</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="Project 1" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Find My Escape</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://https://github.com/Tamworth-Software-Development'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://northcoders.com/project-phase/find-my-escape'">Project Info</button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="Project 2" class="project-img">
+                </div>
+                <h2 class="experience-subtitle project-title">Ultimate Ball Knowledge</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://https://github.com'">Github</button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href='https://google.com'">Project Info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#football'">
+    </section>
+    <section id="football">
+        <p class="section__text__p1">Investigate My</p>
+        <h1 class="title">Semi-Professional Football Career</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-container color-container">
+                    <p class="section__text__p1">2023/2024 Season</p>
+                    <h2 class="experience-subtitle project-title" id="wolves-title">Wolverhampton Casuals FC</h2>
+                    <div class="article-container">
+                        <img src="./assets/Wolverhampton_Casuals_Logo.png" alt="Wolverhampton Casuals" class="project-img football-icons">
+                    </div>
+                    <h2 class="experience-subtitle project-title">35</h2>
+                    <p class="section__text__p1">Appearances</p>
+                    <h2 class="experience-subtitle project-title">10</h2>
+                    <p class="section__text__p1">Goals</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fulltime.thefa.com/index.html;jsessionid=0C1F2AABBFC2B59DA78C1C7E801489A2?selectedSeason=864060295&selectedFixtureGroupAgeGroup=0&selectedDivision=457021261&selectedCompetition=0'">League Table</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fulltime.thefa.com/displayTeam.html?divisionseason=627057587&teamID=619658876'">Team Stats</button>
+                    </div>
+                </div>
+                <div class="details-container color-container">
+                    <p class="section__text__p1">2024/2025 Season</p>
+                    <h2 class="experience-subtitle project-title" id="newark-title">Newark and Sherwood United FC</h2>
+                    <div class="article-container">
+                        <img src="./assets/Newark_and_Sherwood_United_FC_logo.png" alt="Newark and Sherwood United" class="project-img football-icons">
+                    </div>
+                    <h2 class="experience-subtitle project-title">41</h2>
+                    <p class="section__text__p1">Appearances</p>
+                    <h2 class="experience-subtitle project-title">6</h2>
+                    <p class="section__text__p1" >Goals</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fulltime.thefa.com/index.html?league=1625657'">League Table</button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fulltime.thefa.com/displayTeam.html?divisionseason=21219030&teamID=962027977'">Team Stats</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow icon" class="icon arrow" onclick="location.href='./#contact'">
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon">
+                <p><a href="mailto:benniwilson7@gmail.com">benniwilson7@gmail.com</a></p>
+            </div>
+        </div>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
+                <p><a href="https://www.linkedin.com/in/benedict-wilson-7a1834270/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#football">Football</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                  </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Benedict Wilson. All Rights Reserved</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
